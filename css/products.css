@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../src/font/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("../src/font/Open_Sans/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("../src/font/Open_Sans/OpenSans-Bold.ttf");
+}
+
+:root {
+    --prim_color: #DBDBDB; /* define a color variable */
+    --sec_color: black;
+    --bg_color: white;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    display: flex;
+    background-color: var(--bg_color);
+    margin-bottom: 2%;
+}
+/*
+#search-container {
+margin: 1em 0;
+}
+#search-container input {
+background-color: transparent;
+width: 40%;
+border-bottom: 2px solid var(--sec_color);
+padding: 1em 0.3em;
+}
+#search-container input:focus {
+border-bottom-color: var(--sec_color);
+}
+#search-container button {
+padding: 1em 2em;
+margin-left: 1em;
+background-color: var(--sec_color);
+color: #ffffff;
+border-radius: 5px;
+margin-top: 0.5em;
+}
+*/
+#buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 5% 10%;
+}
+
+.button-value {
+    border: 2px solid var(--sec_color);
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: var(--sec_color);
+    cursor: pointer;
+    margin-top: 1em;
+
+}
+.active {
+    background-color: var(--sec_color);
+    color: var(--bg_color);
+}
+#products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}
+.card {
+    background-color: var(--bg_color);
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+
+    height: auto;
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+.image-container {
+    text-align: center;
+}
+.image-container img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+.container h5 {
+    font-weight: 500;
+}
+.hide {
+    display: none;
+}
+@media screen and (max-width: 720px) {
+.image-container img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+}
+.card {
+    max-width: 10em;
+    margin-top: 1em;
+}
+#products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+}
+.button-value {
+    padding: .5em 1.1em;
+}
+}
+  
+

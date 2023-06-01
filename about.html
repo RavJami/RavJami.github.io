@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\swiper-bundle.min.css">
+    <link rel="stylesheet" href="css\slider.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\about.css">
+</head>
+<body>
+
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+<!---------------------------------------------------->
+
+
+
+<section class="about">
+    <div class="about-cont">
+
+        <h1>Welcome</h1>
+        <br>        <br>
+        <p>
+            Welcome to Gadget Galore, your one-stop-shop for all things tech! We are excited to bring you the latest and greatest gadgets and electronics from around the world. 
+            Our website offers an extensive collection of high-quality, affordable gadgets, including smartphones, laptops, tablets, gaming consoles, and more. 
+            Whether you're looking to upgrade your current device or try out the newest technology, we've got you covered.</p>
+        <P>        <br>
+            At Gadget Galore, we believe that technology should be accessible to everyone. 
+            That's why we offer competitive prices, fast shipping, and excellent customer service. 
+            Our team is dedicated to providing you with a seamless shopping experience, from browsing our website to receiving your order at your doorstep.
+        </P>        <br>
+
+        <P>
+            We also take pride in our commitment to sustainability. 
+            We offer eco-friendly options and encourage our customers to recycle their old devices through our partnership with local recycling programs.
+        </P><br>
+
+        <p>
+            Thank you for choosing Gadget Galore for all your tech needs. 
+            We can't wait to help you discover the latest and greatest gadgets that will enhance your life and keep you connected. 
+        </p>
+    </div>
+</section>
+
+
+
+<!---------------------------------------------------->
+
+    <div id="3"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script>
+
+<script src="js\swiper-bundle.min.js"></script>
+<script src="js\script.js"></script>
+</body>
+</html>

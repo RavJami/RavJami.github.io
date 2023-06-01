@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gadget Galore</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\swiper-bundle.min.css">
+    <link rel="stylesheet" href="css\slider.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\product-page.css">
+</head>
+<body>
+
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+
+    <section class="details">
+
+        <div class="container">
+
+            <div class="product">
+                <img src="product.png" alt="">
+            </div>
+
+            <div class="details">
+
+                <h1>Product Alpha</h1>
+                <h3>category</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nullam ac lacinia justo, ac posuere nisi. Etiam vestibulum enim eget massa faucibus, id maximus dolor tristique. 
+                    Morbi ac purus nec ante consectetur interdum. 
+                    Aenean vitae dolor et odio dictum bibendum ac in mauris. Praesent nec neque eu mauris interdum faucibus at eu dolor.
+                </p>
+                <h3 class="price">₱999</h2>
+                <button id="cart-buy" class="add cart-buy" >Buy Now</button>
+            </div>
+                <button class="add add-fav" >Add to favorites</button>
+                <button class="add add-cart" >Add to cart</button>
+        </div>
+
+    </section>
+
+    <div id="3"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script>
+
+<script src="js\swiper-bundle.min.js"></script>
+<script src="js\script.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

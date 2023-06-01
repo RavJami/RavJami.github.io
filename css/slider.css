@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../src/ont/Open_Sans/OpenSans-Regular.ttf");
+}
+
+:root {
+  --prim_color: #DBDBDB;
+  --sec_color: black;
+  --bg_color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.brand{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+
+  margin-bottom: 3%;
+}
+
+.brand h1{
+  width: 100%;
+  background-color: var(--bg_color);
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: var(--bg_color);
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: var(--sec_color);
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: var(--prim_color);
+}
+
+.swiper-navBtn{
+  color: var(--sec_color);
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: var(--bg_color);
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: var(--sec_color);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--bg_color);
+}
+
+.bar {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  background-color: var(--bg_color);
+  z-index: 1;
+
+  padding-top: .5%;
+  padding-bottom: .5%;
+
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}

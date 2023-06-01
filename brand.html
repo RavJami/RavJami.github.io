@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop All</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\swiper-bundle.min.css">
+    <link rel="stylesheet" href="css\slider.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\products.css">
+    
+</head>
+<body>
+
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+<!------------------------------------------------->
+
+<div class="wrapper">
+
+    <section class="brand">
+
+        <h1>Shop By Brand</h1>
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <button class="button" onclick="brandLink()">BRAND A</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <button class="button" onclick="brandLink()">BRAND B</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <button class="button" onclick="brandLink()">BRAND C</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <button class="button" onclick="brandLink()">BRAND D</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <button class="button" onclick="brandLink()">BRAND E</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <button class="button" onclick="brandLink()">BRAND F</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <button class="button" onclick="brandLink()">BRAND G</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <button class="button" onclick="brandLink()">BRAND H</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    <!------    
+        <div id="search-container">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search product name here.."
+      />
+      <button id="search">Search</button>
+    </div>
+    ------->
+
+
+
+    <div id="products"></div>
+  </div>
+<!------------------------------------------------->
+
+
+    <div id="3"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script>
+
+    <script>
+    window.onload = () => {
+        filterProduct("all");
+    };
+
+    </script>
+
+<script src="js\swiper-bundle.min.js"></script>
+<script src="js\script.js"></script>
+<script src="brand.js"></script>
+<script src="sort.js"></script>
+</body>
+</html>

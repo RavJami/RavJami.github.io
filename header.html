@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<header>
+		<!---------------UPPER HEADER------------------->
+        <div id="upper-header">
+            <nav id="nav-1">
+                <div id="stamp">
+                    <img id="coupon" src="src\img\whitecoupon.png" alt="coupon">
+                    <h5 id="sale-header">3.3 Sale is now available</h5>
+                </div>
+
+
+                <div class="nav-link-1" id="navLinks">
+                    <img id="close-icon" src="src\img\close.png" onclick="hideMenu()" alt="close">
+                    <ul>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#" id="contact-link">Contact</a></li>
+                      <li><a href="#" id="help-link">Help Center</a></li>
+                    </ul>
+                  </div>
+                  
+                  <img id="menu-icon" src="src\img\menu.png" onclick="showMenu()" alt="menu">
+                  
+            </nav>
+        </div>
+
+
+        <!---------------MIDDLE HEADER------------------->
+
+        <div class="middle-header">
+            <div class="middle-nav">
+
+                <a class="logolink" href="index.html"><img id="logo" src="src\img\Galore logo.png" alt="galore_logo"></a>
+                
+                <form class="search-bar" action="/search" method="get">
+
+                    <input type="text" class="search-input" placeholder="Search..." name="search">
+
+                    <div class="search-div">
+                        <input class="search-submit" type="image" src="src\img\whitesearch.png" alt="search">
+                    </div>
+
+                </form>
+
+                <div class="user-nav">
+
+                    <a href="#"><img class="user_nav" src="src\img\user.png" alt="user"></a>
+                    <a href="#"><img class="fav_nav" src="src\img\heart.png" alt="heart"></a>
+                    <a href="#"><img class="cart_nav" onclick="hideCart()" src="src\img\cart.png" alt="cart"></a>
+
+                </div>
+            </div>
+        </div> 
+
+        <!---------------LOWER HEADER------------------->
+
+        <div id="lower-header">
+            <nav id="nav-2">
+                <div class="nav-link-2">
+                    <ul>
+                        <li><a href="shopall.html">Shop All</a></li>
+                        <li><a href="phones.html">Phones</a></li>
+                        <li><a href="computer.html">Computer</a></li>
+                        <li><a href="audiovideo.html">Audio&Video</a></li>
+                        <li><a href="camera.html">Camera</a></li>
+                        <li><a href="wearables.html">Wearables</a></li>
+                        <li><a href="onsale.html">On Sale</a></li>
+                        <li><a href="bestsellers.html">Best Sellers</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+		
+	</header> 
+    <div class="cart-box">
+
+    </div>
+    
+    <div class="cart-cont">
+        <div class="cart-header">
+          <h2>Cart</h2>
+          <br>
+          <div class="table-container">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+
+        <div class="cart-bod">
+            
+        </div>
+
+        <div class="checkout">
+            <button class="add checkout" >Buy Now</button>
+        </div>
+
+      </div>
+</div>
+
+</body>
+</html>
